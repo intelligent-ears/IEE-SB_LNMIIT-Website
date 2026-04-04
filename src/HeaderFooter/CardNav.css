@@ -1,0 +1,156 @@
+/* reactbits CardNav — exact template CSS */
+
+.card-nav-container {
+  position: absolute;
+  top: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94%;
+  max-width: 1000px;
+  z-index: 99;
+  box-sizing: border-box;
+}
+
+.card-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 1.5rem;
+  border-radius: 12px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  transform: scale(1.25);
+  transform-origin: left center;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 11;
+}
+
+.hamburger-menu span {
+  width: 24px;
+  height: 2px;
+  background: #333;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.hamburger-menu.open span:first-child {
+  transform: rotate(45deg);
+}
+
+.hamburger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.card-nav-cta-button {
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.card-nav-cta-button:hover {
+  opacity: 0.9;
+}
+
+.mobile-nav-drawer {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  background: white;
+}
+
+.mobile-nav-link {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e293b;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.mobile-nav-link:hover {
+  color: #1d4ed8;
+}
+
+.mobile-nav-cta-button {
+  padding: 0.75rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: opacity 0.2s;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card-nav-header {
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    order: 2;
+  }
+
+  .logo-container {
+    position: static;
+    transform: none;
+    order: 1;
+  }
+
+  .card-nav-cta-button {
+    display: none;
+  }
+}
