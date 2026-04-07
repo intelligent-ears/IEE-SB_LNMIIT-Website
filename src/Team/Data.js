@@ -50,7 +50,7 @@ import Arindam_Chaudhary1 from "../assets/Arindam_Chaudhary.jpeg"
 import Saumilya_Gupta from "../assets/Saumilya_Gupta.jpg"
 import Arihant_Agarwal from "../assets/Arihant_Agarwal.jpg"
 import Navya_Jain from "../assets/Navya_jain.jpg"
-import Shiwani_Sukalkar from "../assets/Shiwani_Sukalkar.pdf"
+import Shiwani_Sukalkar from "../assets/Shiwani.jpeg"
 import Prachi_Paliwal from "../assets/Prachi_Paliwal.jpg"
 import Pari from "../assets/Pari.jpg"
 import Arya from "../assets/Arya.jpg"
@@ -60,6 +60,7 @@ import piyush from "../assets/piyush.png"
 import divya from "../assets/Divya_Pratap_Singh.jpeg"
 import ayesha from "../assets/Ayesha_Tak.jpg"
 import hardik from "../assets/Hardik_Sharma.jpg"
+import amritanshu from "../assets/Amritanshu.jpeg"
 
 
 const fac_arr_24_25 = [
@@ -936,6 +937,13 @@ const functional_team_26_27 = [
     description: "",
     photo: ayesha,
     linkedin: "https://www.linkedin.com/in/ayesha-tak-51644a344/",
+  },
+  {
+    Name: "Amritanshu Kumar Shandilya",
+    position: "Member",
+    description: "",
+    photo: amritanshu,
+    linkedin: "https://www.linkedin.com/in/amritanshu-kumar-shandilya-7b7752321/",
   }
 
 ];
