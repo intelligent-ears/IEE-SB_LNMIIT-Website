@@ -239,9 +239,9 @@ const Home = () => {
       </section>
 
       {/* Action CTA Block */}
-      <section className="py-24 bg-white px-6">
-         <StayInTouch />
-      </section>
+      <div className="bg-white px-6">
+        <StayInTouch />
+      </div>
       
     </div>
   );

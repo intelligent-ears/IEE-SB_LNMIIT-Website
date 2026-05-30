@@ -90,10 +90,10 @@ const Contact = () => {
 
         {/* Info panel */}
         <div className="lg:col-span-2 flex flex-col gap-6">
-          <div>
+          <div className="text-left">
             <h2 className="text-2xl font-bold text-gray-900 mb-1">Let's talk</h2>
             <div className="h-1 w-10 bg-gradient-to-r from-blue-600 to-indigo-500 rounded mb-4" />
-            <p className="text-gray-500 text-sm leading-relaxed">
+            <p className="text-gray-500 text-sm leading-relaxed text-left">
               For more details and answers to your queries, feel free to reach out through the
               form or visit us at the address below.
             </p>
@@ -105,7 +105,7 @@ const Contact = () => {
                 <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 shrink-0">
                   {icon}
                 </div>
-                <div>
+                <div className="text-left">
                   <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">{label}</p>
                   <p className="text-gray-700 text-sm mt-0.5">{value}</p>
                 </div>
@@ -113,7 +113,7 @@ const Contact = () => {
             ))}
           </div>
 
-          <div className="flex gap-4 pt-2">
+          <div className="flex gap-4 pt-2 justify-start">
             <a href="https://www.instagram.com/ieee_lnmiit/" target="_blank" rel="noreferrer"
               className="px-4 py-2 text-sm font-medium bg-gradient-to-r from-pink-500 to-orange-400
                 text-white rounded-lg hover:opacity-90 transition">
