@@ -1,4 +1,3 @@
-import EventCard from "./EventCard";
 import Header from "./Header";
 import firstImg from '../assets/first.webp'
 import secondImg from '../assets/second.webp'
@@ -8,7 +7,7 @@ import cross from '../assets/cross.svg'
 import prev from '../assets/prev.svg'
 import frwd from '../assets/frwd.svg'
 import StayInTouch from "./StayTouch";
-import { EventData } from "./eventData";
+
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -123,30 +122,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Upcoming Events */}
-      <section className="py-24 px-6 md:px-12 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <Header title="UPCOMING EVENTS" />
-          </div>
-          <div className="space-y-6">
-            {EventData.map((event) => (
-              <EventCard
-                key={event.id}
-                date={event.date}
-                eventName={event.eventName}
-                eventDescription={event.eventDescription}
-                eventVenue={event.eventVenue}
-              />
-            ))}
-            {EventData.length === 0 && (
-              <div className="text-center p-12 bg-slate-50 rounded-2xl border border-slate-100">
-                <p className="text-slate-500 text-lg">We are currently cooking up our next big event! Check back soon.</p>
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
+
 
       {/* Gallery Section */}
       <section className="py-24 px-6 md:px-12 bg-slate-900 text-white relative">
