@@ -6,7 +6,8 @@ const items = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Events', href: '/event' },
-  { label: 'Team', href: '/team' }
+  { label: 'Team', href: '/team' },
+  { label: 'AP-S', href: '/aps' }
 ];
 
 const Navbar = () => {

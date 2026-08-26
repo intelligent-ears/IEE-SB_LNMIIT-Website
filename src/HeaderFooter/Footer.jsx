@@ -8,6 +8,7 @@ const QUICK_LINKS = [
   { to: "/about", label: "About Us" },
   { to: "/team", label: "Team" },
   { to: "/event", label: "Events" },
+  { to: "/aps", label: "IEEE AP-S Chapter" },
   { to: "/contact", label: "Contact Us" },
 ];
 

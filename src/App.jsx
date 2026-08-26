@@ -11,6 +11,7 @@ import HomeImg from './Home/HomeImg';
 import Hackathon from './Event/Hackathon';
 import Webinar from './Event/Webinar';
 import Workshop from './Event/Workshop';
+import APS from './APS/APS';
 
 function App() {
     const location = useLocation();
@@ -28,6 +29,7 @@ function App() {
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/team" element={<Team />} />
 				<Route path="/about" element={<About />} />
+				<Route path="/aps" element={<APS />} />
 			</Routes>
 			<Footer />
 		</div>

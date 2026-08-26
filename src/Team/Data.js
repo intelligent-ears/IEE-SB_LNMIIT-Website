@@ -71,7 +71,7 @@ const fac_arr_24_25 = [
     photo: dr_harshvardhan_kumar,
   },
   {
-    Name: "Dr. Soumitra Debnath",
+    Name: "Prof. Soumitra Debnath",
     position: "IEEE SB COORDINATOR",
     description: "",
     photo: dr_soumitra_debnath,
@@ -93,7 +93,7 @@ const fac_arr_25_26 = [
     linkedin: "https://linkedin.com/",
   },
   {
-    Name: "Dr. Soumitra Debnath",
+    Name: "Prof. Soumitra Debnath",
     position: "IEEE SB COORDINATOR",
     description: "",
     photo: dr_soumitra_debnath,
@@ -117,7 +117,7 @@ const fac_arr_26_27 = [
     linkedin: "https://www.linkedin.com/in/dr-harshvardhan-kumar-b427079b/",
   },
   {
-    Name: "Dr. Soumitra Debnath",
+    Name: "Prof. Soumitra Debnath",
     position: "IEEE SB COORDINATOR",
     description: "",
     photo: dr_soumitra_debnath,
@@ -218,7 +218,7 @@ const ieee_sb_25_26 = [
 
 const ieee_sb_26_27 = [
   {
-    Name: "Arindham Chaudhary",
+    Name: "Arindam Chaudhary",
     position: "Chairperson",
     description: "",
     photo: Arindam_Chaudhary1,
@@ -230,13 +230,6 @@ const ieee_sb_26_27 = [
     description: "",
     photo: Saumilya_Gupta,
     linkedin: "https://www.linkedin.com/in/saumilyagupta/",
-  },
-  {
-    Name: "Rachita Jain",
-    position: "Secretary",
-    description: "",
-    photo: Default_Img,
-    linkedin: "https://www.linkedin.com/in/rachita-jain-373a78250/",
   },
   {
     Name: "Arihant Agarwal",

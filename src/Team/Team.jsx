@@ -19,22 +19,22 @@ import { useEffect, useState } from "react";
 
 const SECTIONS = (year) => {
   const base = [
-    { title: "Faculty Mentors",        data: map_fac_arr[year],   cols: "md:grid-cols-3" },
-    { title: "IEEE Student Branch",    data: map_ieee_sb[year],   cols: "md:grid-cols-4" },
-    { title: "Women in Engineering",   data: map_wie[year],       cols: "md:grid-cols-4" },
+    { title: "Faculty Mentors",        data: map_fac_arr[year] },
+    { title: "IEEE Student Branch",    data: map_ieee_sb[year] },
+    { title: "Women in Engineering",   data: map_wie[year] },
   ];
 
   if (year === "2026-2027") {
     return [
       ...base,
-      { title: "Functional Team", data: map_functional_team[year], cols: "md:grid-cols-4" }
+      { title: "Functional Team", data: map_functional_team[year] }
     ];
   }
 
   return [
     ...base,
-    { title: "Web Development Team",   data: map_webdevs[year],   cols: "md:grid-cols-4" },
-    { title: "Content Creator Team",   data: map_cont_ctr[year],  cols: "md:grid-cols-3" },
+    { title: "Web Development Team",   data: map_webdevs[year] },
+    { title: "Content Creator Team",   data: map_cont_ctr[year] },
   ];
 };
 
@@ -76,20 +76,21 @@ const Team = () => {
       </div>
 
       {/* Team sections */}
-      {SECTIONS(year).map(({ title, data, cols }) => (
+      {SECTIONS(year).map(({ title, data }) => (
         <div key={title} className="max-w-6xl mx-auto px-6 py-10">
           <h4 className="text-2xl font-bold text-gray-800 mb-2">{title}</h4>
           <div className="h-1 w-12 bg-gradient-to-r from-blue-600 to-indigo-500 rounded mb-6" />
-          <div className={`grid sm:grid-cols-2 ${cols} gap-2`}>
+          <div className="flex flex-wrap justify-center gap-x-20 gap-y-12">
             {data?.map((f, idx) => (
-              <Card
-                key={idx}
-                Facultyname={f.Name}
-                photo={f.photo}
-                description={f.description}
-                position={f.position}
-                linkedin={f.linkedin}
-              />
+              <div key={idx} className="w-48 max-w-full">
+                <Card
+                  Facultyname={f.Name}
+                  photo={f.photo}
+                  description={f.description}
+                  position={f.position}
+                  linkedin={f.linkedin}
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -100,16 +101,17 @@ const Team = () => {
         <div className="max-w-6xl mx-auto px-6 py-10">
           <h4 className="text-2xl font-bold text-gray-800 mb-2">Event Management Team</h4>
           <div className="h-1 w-12 bg-gradient-to-r from-blue-600 to-indigo-500 rounded mb-6" />
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-2">
+          <div className="flex flex-wrap justify-center gap-x-20 gap-y-12">
             {map_event_mng[year]?.map((f, idx) => (
-              <Card
-                key={idx}
-                Facultyname={f.Name}
-                photo={f.photo}
-                description={f.description}
-                position={f.position}
-                linkedin={f.linkedin}
-              />
+              <div key={idx} className="w-48 max-w-full">
+                <Card
+                  Facultyname={f.Name}
+                  photo={f.photo}
+                  description={f.description}
+                  position={f.position}
+                  linkedin={f.linkedin}
+                />
+              </div>
             ))}
           </div>
         </div>
