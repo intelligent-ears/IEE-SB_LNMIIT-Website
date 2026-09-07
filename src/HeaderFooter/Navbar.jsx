@@ -7,7 +7,9 @@ const items = [
   { label: 'About', href: '/about' },
   { label: 'Events', href: '/event' },
   { label: 'Team', href: '/team' },
-  { label: 'AP-S', href: '/aps' }
+  { label: 'Chapters', children: [
+      { label: 'AP-S', href: '/aps' },
+    ] },
 ];
 
 const Navbar = () => {
